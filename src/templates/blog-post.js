@@ -16,6 +16,8 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
+      <br />
+      <br />
       <article
         className="blog-post"
         itemScope
