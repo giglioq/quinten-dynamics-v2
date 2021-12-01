@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+//Set your brand colors
+$burnt: #591902;
+$orange: #D93F07;
+$red: #F23005;
+$grey: #D9D9D9;
+$grey-dark: #0D0D0D;
+
+
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+
+//$primary: $turquoise;
+//$link: $blue;
+//$info: $cyan;
+//$success: $green;
+//$warning: $yellow;
+//$danger: $red;
+//$dark: $grey-darker;
+//$text: $grey-dark;
+
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+//$body-background-color: $blue-light;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+$title-color: $grey-dark;
+
+
+.blog-post{
+    h1{
+        color: $red
+    }
+    h2{
+    color: $orange
+    }
+    h3{
+        color:$burnt
+    }
+};
+
+@import "~bulma/bulma.sass";

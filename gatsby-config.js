@@ -1,17 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Quinten Dynamics`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Quinten Giglio`,
+      summary: `a student, performer, biker and kelp enthusiast.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A starter blog exploring my interests.`,
+    siteUrl: `https://quintendynamicsv2.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `quintengiglio`,
     },
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -46,6 +47,7 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-bulma`,
         ],
       },
     },
@@ -113,8 +115,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Quinten Dynamics`,
+        short_name: `qDYNM`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website

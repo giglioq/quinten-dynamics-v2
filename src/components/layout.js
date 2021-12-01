@@ -1,33 +1,49 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import Navbar from "./Navbar"
+import "../styles/mystyles.scss"
+import Bio from "./bio"
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
-  let header
-
-  if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    )
-  }
-
+const Layout = ({ children }) => {
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+    <div className="layout">
+      <Navbar />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="container is-fluid">
+        <div className="columns">
+          <div className="column is-one-fifth">
+            <br />
+            <h1>Side Bar</h1>
+            <p>Sidebar-Bio is small and collapses on scroll</p>
+          </div>
+          <div className="column is-4-fifths">
+            <div>{children}</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <footer className="footer">
+        <div class="content has-text-centered">
+          <Bio />
+          <p>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.com">Gatsby</a>
+          </p>
+        </div>
       </footer>
     </div>
   )
