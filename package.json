@@ -9,8 +9,11 @@
   },
   "dependencies": {
     "bulma": "^0.9.3",
-    "gatsby": "^4.2.0",
+    "fs": "^0.0.1-security",
+    "gatsby": "^4.4.0",
+    "gatsby-cli": "^4.4.0",
     "gatsby-image": "^3.11.0",
+    "gatsby-link": "^4.4.0",
     "gatsby-plugin-feed": "^4.2.0",
     "gatsby-plugin-gatsby-cloud": "^4.2.0",
     "gatsby-plugin-google-analytics": "^4.2.0",
@@ -20,6 +23,7 @@
     "gatsby-plugin-react-helmet": "^5.2.0",
     "gatsby-plugin-sass": "^5.2.0",
     "gatsby-plugin-sharp": "^4.2.0",
+    "gatsby-plugin-styled-components": "^5.4.0",
     "gatsby-remark-bulma": "^1.0.1",
     "gatsby-remark-copy-linked-files": "^5.2.0",
     "gatsby-remark-images": "^6.2.0",
@@ -29,13 +33,16 @@
     "gatsby-source-filesystem": "^4.2.0",
     "gatsby-transformer-remark": "^5.2.0",
     "gatsby-transformer-sharp": "^4.2.0",
+    "polyfill": "^0.1.0",
     "prismjs": "^1.25.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "sass": "^1.44.0",
+    "styled-components": "^5.3.3",
     "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75"
+    "typeface-montserrat": "0.0.75",
+    "util": "^0.12.4"
   },
   "devDependencies": {
     "prettier": "^2.4.1"

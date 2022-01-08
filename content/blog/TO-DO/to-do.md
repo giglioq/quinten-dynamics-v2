@@ -16,5 +16,11 @@ description: "Things that need to be added, updated or altered regarding this we
  - notes
  - projects
 - Stick Footer to bottom
-- Update Colors
+- __Update Colors__
+
+
+# Mobile
+- Headers are too big
+- No Burger Menu
+- put sidebar in burger /make collapsed
 

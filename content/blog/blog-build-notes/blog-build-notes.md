@@ -33,3 +33,11 @@ use yarn
 if you don't use yarn everything breaks and is difficult 
 
 ```npm install --global yarn```
+
+# Navbar
+
+The solution I was able to get to work for the navbar burger was React Hooks using the state
+
+**[Toggling Class](https://stackoverflow.com/questions/42630473/react-toggle-class-onclick/42630780)**
+
+The main challenge here was the fact that the javascript to handle the click could not be defined outside of the render function because it references things on the DOM. 
