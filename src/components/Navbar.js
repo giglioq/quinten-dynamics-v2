@@ -30,11 +30,13 @@ export default function Navbar(props) {
   // }
   // )
   return (
-    <nav className="navbar is-spaced is-link is-fixed-top">
+    <nav className="navbar is-spaced is-white is-fixed-top">
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item is-size-3">
-          {title}
-        </Link>
+        <div className="navbar-item">
+          <Link to="/" className="button is-family-secondary is-outlined is-link is-size-3">
+            {title}
+          </Link>
+        </div>
         <div role="button" className={isActive ? 'navbar-burger burger':'navbar-burger burger is-active'} id="burger" onClick={toggleClass}>
         <span></span>
         <span></span>
@@ -50,17 +52,17 @@ export default function Navbar(props) {
       <div className={isActive ? 'navbar-menu':'navbar-menu is-active'} id="nav-links">
         <div className="navbar-end">
           <div className="navbar-item">
-            <Link to="/projects" className="button is-primary">
+            <Link to="/projects" className="button is-warning is-outlined">
               Projects
             </Link>
           </div>
           <div className="navbar-item">
-            <Link to="/notes" className="button is-warning">
+            <Link to="/notes" className="button is-warning is-outlined">
               Notes
             </Link>
           </div>
           <div className="navbar-item">
-            <Link to="/about" className="button is-danger">
+            <Link to="/about" className="button is-warning is-outlined">
               About
             </Link>
           </div>

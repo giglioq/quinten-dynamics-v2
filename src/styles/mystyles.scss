@@ -1,26 +1,31 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Petemoss&family=The+Nautigal:wght@700&display=swap');
 
 //Set your brand colors
-$burnt: #591902;
-$orange: #D93F07;
-$red: #F23005;
-$grey: #D9D9D9;
+$mellow: #D9A84E;
+$leaf: #2C592F;
+$clay: #BF8654;
+$paprika: #D9663D;
+$grey: #D9D4D2;
 $grey-dark: #0D0D0D;
+$mauve: #523559;
+$sky: #5991D9;
 
 
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
+$family-secondary: 'Petemoss', cursive;
+//$family-secondary: 'The Nautigal', cursive;
 
-//$primary: $turquoise;
-//$link: $blue;
-//$info: $cyan;
+$primary: $mauve;
+$link: $leaf;
+$info: $sky;
 //$success: $green;
-//$warning: $yellow;
-//$danger: $red;
+$warning: $mellow;
+$danger: $paprika;
 //$dark: $grey-darker;
 //$text: $grey-dark;
 
@@ -35,17 +40,34 @@ $input-shadow: none;
 
 $title-color: $grey-dark;
 
+.HL-prime {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, $primary 50%);
+}
 
 .blog-post{
     h1{
-        color: $red
+        color: $leaf
     }
     h2{
-    color: $orange
+    color: $paprika
     }
     h3{
-        color:$burnt
+        color:$clay
+    }
+    h4{
+        color: $mauve
+    }
+    h5{
+        color: $mellow
+    }
+    h6{
+        color: $sky
     }
 };
+
+.navbar{
+    border: 0.1rem solid $leaf;
+}
+$navbar-height: 3.25rem;
 
 @import "~bulma/bulma.sass";

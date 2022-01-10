@@ -7,20 +7,20 @@ description: "Things that need to be added, updated or altered regarding this we
 
 # To Do List for this website
 
-- Fix Blog queries
 - Fill out side bar 
 - Touch up front page and header
     - sidebar padding
-    - sticky header
 - Create skeleton for 
- - notes
- - projects
-- Stick Footer to bottom
+   - notes
+   - projects
+- Remove footer from blog posts
 - __Update Colors__
 
+# Blog
+
+- format title and start of article better
 
 # Mobile
 - Headers are too big
-- No Burger Menu
 - put sidebar in burger /make collapsed
 
