@@ -26,7 +26,6 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-      <br />
       <div className="tile is-ancestor">
         <div className="tile box">This is the front page.</div>
       </div>

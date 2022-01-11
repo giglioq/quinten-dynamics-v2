@@ -30,10 +30,10 @@ export default function Navbar(props) {
   // }
   // )
   return (
-    <nav className="navbar is-spaced is-white is-fixed-top">
+    <nav className="navbar is-white is-fixed-top">
       <div className="navbar-brand">
         <div className="navbar-item">
-          <Link to="/" className="button is-family-secondary is-outlined is-link is-size-3">
+          <Link to="/" className="button is-family-secondary is-outlined is-link is-size-4">
             {title}
           </Link>
         </div>

@@ -40,6 +40,9 @@ $input-shadow: none;
 
 $title-color: $grey-dark;
 
+body{
+    padding-top: 3rem;
+}
 .HL-prime {
     background: linear-gradient(180deg,rgba(255,255,255,0) 50%, $primary 50%);
 }
@@ -68,6 +71,6 @@ $title-color: $grey-dark;
 .navbar{
     border: 0.1rem solid $leaf;
 }
-$navbar-height: 3.25rem;
+$navbar-height: 2rem;
 
 @import "~bulma/bulma.sass";
