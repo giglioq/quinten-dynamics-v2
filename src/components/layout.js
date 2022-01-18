@@ -15,11 +15,25 @@ const Layout = ({ children }) => {
         <br />
         <br />
         <div className="container is-fluid">
+          
           <div className="columns">
             <div className="column is-one-fifth">
-              <Sidebar />
+              <div className="sidebar block">
+                <Sidebar />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              </div>
+              
             </div>
             <div className="column is-4-fifths">
+            <hr className="has-background-link mr-3 mb-1 mt-1"></hr>
+            <hr className="has-background-warning ml-3 mt-0"></hr>
               <div>{children}</div>
             </div>
           </div>

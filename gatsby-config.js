@@ -1,3 +1,8 @@
+
+// Requiring the lodash library  if using _.round()
+//const _ = require("lodash");  
+    
+
 module.exports = {
   siteMetadata: {
     title: `Quinten Dynamics`,
@@ -35,13 +40,22 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 800,
+              showCaptions: true,
+              wrapperStyle: `height: auto; width: 70%;`
+              //fluidResult => `flex:${_.round(fluidResult.aspectRatio, 2)};`,
             },
           },
+          // {
+          //   resolve: `gatsby-remark-responsive-iframe`,
+          //   options: {
+          //     wrapperStyle: `margin-bottom: 1.0725rem`,
+          //   },
+          // },
           {
-            resolve: `gatsby-remark-responsive-iframe`,
+            resolve: `gatsby-remark-image-attributes`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              dataAttributes: true
             },
           },
           `gatsby-remark-prismjs`,

@@ -69,8 +69,12 @@ body{
 };
 
 .navbar{
-    border: 0.1rem solid $leaf;
+    border: 0.1rem solid $grey-dark;
 }
 $navbar-height: 2rem;
+
+.sidebar{
+    border-right: 0.1rem solid $grey-dark;
+}
 
 @import "~bulma/bulma.sass";
